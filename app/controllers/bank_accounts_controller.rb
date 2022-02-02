@@ -1,2 +1,2 @@
-class BankAccountsController < ApplicationController
+class BankAccountController < ApplicationController
 end
