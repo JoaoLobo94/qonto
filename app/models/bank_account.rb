@@ -1,2 +1,2 @@
-class BankAccount < ApplicationRecord
+class BankAccounts < ApplicationRecord
 end
