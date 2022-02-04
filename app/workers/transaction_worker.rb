@@ -2,6 +2,7 @@ class TransactionWorker
   include Sidekiq::Worker
   sidekiq_options retry: true
 
+  #one job for each loop
   def perform(transactions)
     bank_account = BankAccount.find_by(iban: transactions['organization_iban'],
                                        bic: transactions['organization_bic'])

@@ -8,10 +8,11 @@ class TransactionsController < ApplicationController
   end
 
   def create
+    # We could instantiate a transaction here and test saving here, displaying the correct data
     if Transaction.check_transaction(parsed_transaction)
-      render json: "Transactions updated", status: :created
+      render json: 'Transactions updated', status: :created
     else
-      render json: "Unprocessable entity", status: :unprocessable_entity
+      render json: 'Unprocessable entity', status: :unprocessable_entity
     end
   end
 
