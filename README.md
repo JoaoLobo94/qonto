@@ -17,4 +17,4 @@ Thankfully it's extremely simple to use.
 ### Potential improvements
 Create a docker-compose file with a pg database and a load balancer to emulate real calls to the database.
 Add more endpoints for full crud functionality.
-Block users from uploading a file without sidekick.
+Block users from uploading a file without sidekick.# qonto
